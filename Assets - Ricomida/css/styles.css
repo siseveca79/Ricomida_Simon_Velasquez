@@ -1,0 +1,65 @@
+/* Aquí puedes definir estilos adicionales según las guías de estilo proporcionadas */
+body {
+  font-family: 'Cabin', sans-serif;
+}
+
+h5 {
+  font-family: 'Lobster', cursive;
+}
+
+.receta {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
+.card {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.carousel-inner .carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* styles.css */
+
+.red-section {
+  background-color: red;
+  color: white;
+  padding: 100px 0;
+}
+
+.red-btn {
+  background-color: red;
+  color: white;
+  border: 5px solid white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.red-btn:hover {
+  background-color: white;
+  color: red;
+}
+
+/* styles.css */
+.btn-custom {
+  border-color: white; /* Cambia el color del borde */
+}
+
+footer {
+  background-color: #373a3c;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
