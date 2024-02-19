@@ -19,6 +19,29 @@ h5 {
   padding: 20px 0; /* Centrar la línea horizontalmente */
 }
 
+.mensaje-emergente {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+.popover {
+  background-color: #FF6347; /* Cambia el color de fondo del popover */
+  color: white; /* Cambia el color del texto dentro del popover */
+  border-color: #FF6347; /* Cambia el color del borde del popover */
+}
+
+/* Estilos para el botón */
+#enviarCorreo:hover + .mensaje-emergente {
+  display: block;
+}
+
+
+
 .card {
   margin-bottom: 20px;
   cursor: pointer;
