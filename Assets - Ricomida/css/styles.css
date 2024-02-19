@@ -7,6 +7,16 @@ h5 {
   font-family: 'Lobster', cursive;
 }
 
+.font-bold {
+  font-weight: bold;
+}
+.separator {
+  border-bottom: 2px solid black; /* Ancho de la línea y color */
+  width: 100%; /* Longitud de la línea */
+  margin: 0 auto;
+  padding: 20px 0; /* Centrar la línea horizontalmente */
+}
+
 .receta {
   margin-top: 20px;
   cursor: pointer;
@@ -34,18 +44,20 @@ h5 {
 .red-section {
   background-color: red;
   color: white;
-  padding: 100px 0;
+  height: 500px;
+  padding: 150px 0;
 }
 
 .red-btn {
   background-color: red;
   color: white;
-  border: 5px solid white;
+  border: 5px solid white; /* Aquí se especifican los bordes blancos */
   padding: 10px 20px;
   text-decoration: none;
   display: inline-block;
   margin-top: 20px;
 }
+
 
 .red-btn:hover {
   background-color: white;
@@ -56,6 +68,8 @@ h5 {
 .btn-custom {
   border-color: white; /* Cambia el color del borde */
 }
+
+
 
 footer {
   background-color: #373a3c;
