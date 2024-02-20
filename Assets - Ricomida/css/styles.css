@@ -13,34 +13,31 @@ h5 {
 }
 
 .separator {
-  border-bottom: 2px solid black; /* Ancho de la línea y color */
-  width: 100%; /* Longitud de la línea */
+  border-bottom: 2px solid #000;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px 0; /* Centrar la línea horizontalmente */
+  padding: 20px 0;
 }
 
 .mensaje-emergente {
   display: none;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
-  color: rgb(240, 11, 11);
+  color: #dc3545;
   padding: 5px 10px;
   border-radius: 5px;
 }
 
-
 .popover {
-  background-color: #0b0b0b; /* Cambia el color de fondo del popover */
-  color: rgb(182, 12, 12); /* Cambia el color del texto dentro del popover */
-  border-color: #0c0b0b; /* Cambia el color del borde del popover */
+  background-color: #0b0b0b;
+  color: #dc3545;
+  border-color: #0c0b0b;
 }
 
 /* Estilos para el botón */
 #enviarCorreo:hover + .mensaje-emergente {
   display: block;
 }
-
-
 
 .card {
   margin-bottom: 20px;
@@ -52,7 +49,7 @@ h5 {
 }
 
 .carousel-indicators {
-  margin-top: 500px; /* Ajusta este valor según sea necesario */
+  margin-top: 500px;
 }
 
 .carousel-inner .carousel-item img {
@@ -61,16 +58,16 @@ h5 {
 }
 
 .red-section {
-  background-color: red;
-  color: white;
+  background-color: #dc3545;
+  color: #fff;
   height: 500px;
   padding: 100px 0;
 }
 
 .red-btn {
-  background-color: red;
-  color: white;
-  border: 5px solid white; /* Aquí se especifican los bordes blancos */
+  background-color: #dc3545;
+  color: #fff;
+  border: 5px solid #fff;
   padding: 10px 20px;
   text-decoration: none;
   display: inline-block;
@@ -78,17 +75,17 @@ h5 {
 }
 
 .red-btn:hover {
-  background-color: white;
-  color: red;
+  background-color: #fff;
+  color: #dc3545;
 }
 
 .btn-custom {
-  border-color: white; /* Cambia el color del borde */
+  border-color: #fff;
 }
 
 footer {
   background-color: #373a3c;
-  color: white;
+  color: #fff;
   text-align: center;
   padding: 10px 0;
 }

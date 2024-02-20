@@ -210,14 +210,15 @@
 
 
 
-  <h1 class="mt-1 text-center py-5">Recetas relacionadas</h1>
+  <h1 class="mt-1 text-center py-5"><strong>`Recetas relacionadas`</strong></h1>
+
 <div class="row row-cols-1 row-cols-md-3 gy-4 py-5"> <!-- Utilizamos row-cols-* para especificar el número de columnas en diferentes tamaños de pantalla y gy-* para agregar un espacio entre las filas -->
   <div class="col-md-4">
     <div class="card h-100 d-flex flex-column mb-4"> <!-- Agregamos la clase h-100 para que todas las tarjetas tengan la misma altura y flex-column para utilizar flexbox -->
       <img src="./Assets - Ricomida/img/recipe-card-1.png" class="card-img-top" alt="Receta 1" style="object-fit: cover; height: 200px;">
       <!-- Establecemos un tamaño fijo para la altura de la imagen -->
       <div class="card-body">
-        <h4 class="mt-1 text-left py-2 font-bold">PANQUEQUE CON MANJAR Y CREMA</h4>
+        <h3 class="mt-1 text-left py-2 font-bold">PANQUEQUE CON MANJAR Y CREMA</h3>
         <h5 class="card-title">Ensalada de quinoa con verduras asadas</h5>
         <p class="card-text">Esta ensalada es una opción nutritiva y deliciosa para el almuerzo o la cena.</p>
       </div>
@@ -227,7 +228,7 @@
     <div class="card h-100 d-flex flex-column mb-4">
       <img src="./Assets - Ricomida/img/recipe-card-2.png" class="card-img-top" alt="Receta 2" style="object-fit: cover; height: 200px;">
       <div class="card-body">
-        <h4 class="mt-1 text-left py-2 font-bold">TIRAMISU</h4>
+        <h3 class="mt-1 text-left py-2 font-bold">TIRAMISU</h3>
         <h5 class="card-title">Pollo al curry con arroz basmati</h5>
         <p class="card-text">Un plato con sabores exóticos y fácil de preparar.</p>
       </div>
@@ -237,7 +238,7 @@
     <div class="card h-100 d-flex flex-column mb-4">
       <img src="./Assets - Ricomida/img/recipe-card-3.png" class="card-img-top" alt="Receta 3" style="object-fit: cover; height: 200px;">
       <div class="card-body">
-        <h4 class="mt-1 text-left py-2 font-bold">PLATEADAS</h4>
+        <h3 class="mt-1 text-left py-2 font-bold">PLATEADAS</h3>
         <h5 class="card-title">Brownie de chocolate con nueces</h5>
         <p class="card-text">Un postre irresistible para los amantes del chocolate.</p>
       </div>
@@ -264,6 +265,11 @@
       <a href="#" class="btn btn-danger mt-3 py-2" style="border-color: white; padding: 20px 80px;">Empezar</a> <!-- Aplicamos el estilo directamente -->
   </div>
 </section>
+
+
+
+
+
 
 <footer class="container-fluid bg-dark text-white py-5">
   <div class="text-center">
@@ -296,9 +302,13 @@ $(document).ready(function() {
     $('#enviarCorreo').click(function() {
         alert('El correo fue enviado correctamente...');
     });
+
+
     $('#favorito').click(function() {
         alert('Receta añadida a favoritos');
     });
+
+
 
 });
 
@@ -334,11 +344,26 @@ $(document).ready(function(){
       });
     });
 
+
     // Inicialización del carousel de Bootstrap
     var carousels = document.querySelectorAll('.carousel');
     carousels.forEach(function(carousel) {
       new bootstrap.Carousel(carousel);
     });
+  });
+
+  $(document).ready(function() {
+    var colorOriginal = true;
+
+// Evento dblclick para cambiar el color del h1
+$('h1').dblclick(function() {
+  if (colorOriginal) {
+    $(this).css('color', 'red');
+  } else {
+    $(this).css('color', ''); // Restaura el color original
+  }
+  colorOriginal = !colorOriginal; // Invierte el estado del color
+});
   });
 </script>
 
