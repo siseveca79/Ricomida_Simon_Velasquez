@@ -73,11 +73,7 @@
 
   <div class="mt-5 py-4">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators d-flex justify-content-center mt-5"> <!-- Aumenta el margen superior -->
-        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active" style="width: 10px; height: 10px; border-radius: 50%; background-color: red;"></li>
-        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" style="width: 10px; height: 10px; border-radius: 50%; background-color: red;"></li>
-        <!-- Agregar más indicadores según el número de imágenes -->
-    </ol>
+
 
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -113,6 +109,11 @@
           </div>
         </div>
       </div>
+      <ol class="carousel-indicators d-flex justify-content-center mt-5"> <!-- Aumenta el margen superior -->
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active" style="width: 10px; height: 10px; border-radius: 50%; background-color: red;"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" style="width: 10px; height: 10px; border-radius: 50%; background-color: red;"></li>
+        <!-- Agregar más indicadores según el número de imágenes -->
+    </ol>
     </div>
   </div>
 
@@ -155,46 +156,41 @@
 
   <div class="separator"></div>
 
+
   <h1 class="mt-1 text-center py-5">Recetas relacionadas</h1>
-  <div class="row py-5"> <!-- Agregamos un padding de 4 unidades en todas las direcciones -->
-    <div class="col-md-4">
-      <div class="card h-100 d-flex flex-column">
-        <!-- Añadimos la clase h-100 para que todas las tarjetas tengan la misma altura y flex-column para utilizar flexbox -->
-        <img src="./Assets - Ricomida/img/recipe-card-1.png" class="card-img-top" alt="Receta 1"
-          style="object-fit: cover; height: 200px;">
-        <!-- Establecemos un tamaño fijo para la altura de la imagen -->
-        <div class="card-body">
-          <h4 class="mt-1 text-left py-2 font-bold">PANQUEQUE CON MANJAR Y CREMA</h4>
-          <h5 class="card-title">Ensalada de quinoa con verduras asadas</h5>
-          <p class="card-text">Esta ensalada es una opción nutritiva y deliciosa para el almuerzo o la cena.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100 d-flex flex-column">
-        <img src="./Assets - Ricomida/img/recipe-card-2.png" class="card-img-top" alt="Receta 2"
-          style="object-fit: cover; height: 200px;">
-        <!-- Establecemos un tamaño fijo para la altura de la imagen -->
-        <div class="card-body">
-          <h4 class="mt-1 text-left py-2 font-bold">TIRAMISU</h4>
-          <h5 class="card-title">Pollo al curry con arroz basmati</h5>
-          <p class="card-text">Un plato con sabores exóticos y fácil de preparar.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card h-100 d-flex flex-column">
-        <img src="./Assets - Ricomida/img/recipe-card-3.png" class="card-img-top" alt="Receta 3"
-          style="object-fit: cover; height: 200px;">
-        <!-- Establecemos un tamaño fijo para la altura de la imagen -->
-        <div class="card-body">
-          <h4 class="mt-1 text-left py-2 font-bold">PLATEADAS</h4>
-          <h5 class="card-title">Brownie de chocolate con nueces</h5>
-          <p class="card-text">Un postre irresistible para los amantes del chocolate.</p>
-        </div>
+<div class="row row-cols-1 row-cols-md-3 gy-4 py-5"> <!-- Utilizamos row-cols-* para especificar el número de columnas en diferentes tamaños de pantalla y gy-* para agregar un espacio entre las filas -->
+  <div class="col-md-4">
+    <div class="card h-100 d-flex flex-column mb-4"> <!-- Agregamos la clase h-100 para que todas las tarjetas tengan la misma altura y flex-column para utilizar flexbox -->
+      <img src="./Assets - Ricomida/img/recipe-card-1.png" class="card-img-top" alt="Receta 1" style="object-fit: cover; height: 200px;">
+      <!-- Establecemos un tamaño fijo para la altura de la imagen -->
+      <div class="card-body">
+        <h4 class="mt-1 text-left py-2 font-bold">PANQUEQUE CON MANJAR Y CREMA</h4>
+        <h5 class="card-title">Ensalada de quinoa con verduras asadas</h5>
+        <p class="card-text">Esta ensalada es una opción nutritiva y deliciosa para el almuerzo o la cena.</p>
       </div>
     </div>
   </div>
+  <div class="col-md-4">
+    <div class="card h-100 d-flex flex-column mb-4">
+      <img src="./Assets - Ricomida/img/recipe-card-2.png" class="card-img-top" alt="Receta 2" style="object-fit: cover; height: 200px;">
+      <div class="card-body">
+        <h4 class="mt-1 text-left py-2 font-bold">TIRAMISU</h4>
+        <h5 class="card-title">Pollo al curry con arroz basmati</h5>
+        <p class="card-text">Un plato con sabores exóticos y fácil de preparar.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100 d-flex flex-column mb-4">
+      <img src="./Assets - Ricomida/img/recipe-card-3.png" class="card-img-top" alt="Receta 3" style="object-fit: cover; height: 200px;">
+      <div class="card-body">
+        <h4 class="mt-1 text-left py-2 font-bold">PLATEADAS</h4>
+        <h5 class="card-title">Brownie de chocolate con nueces</h5>
+        <p class="card-text">Un postre irresistible para los amantes del chocolate.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 </main>
 
@@ -202,7 +198,7 @@
   <div class="container text-center">
       <h1>SUSCRIBETE EN NUESTRO NEWSLETTER</h1>
       <h3>y obtén las mejores recetas que tenemos en Ricomida</h3>
-      <a href="#" class="btn btn-danger mt-5 py-2" style="border-color: white; padding: 20px 80px;">Empezar</a> <!-- Aplicamos el estilo directamente -->
+      <a href="#" class="btn btn-danger mt-3 py-2" style="border-color: white; padding: 20px 80px;">Empezar</a> <!-- Aplicamos el estilo directamente -->
   </div>
 </section>
 

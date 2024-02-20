@@ -51,6 +51,10 @@ h5 {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+.carousel-indicators {
+  margin-top: 500px; /* Ajusta este valor según sea necesario */
+}
+
 .carousel-inner .carousel-item img {
   max-width: 100%;
   height: auto;
@@ -60,7 +64,7 @@ h5 {
   background-color: red;
   color: white;
   height: 500px;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 .red-btn {
@@ -86,5 +90,5 @@ footer {
   background-color: #373a3c;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
