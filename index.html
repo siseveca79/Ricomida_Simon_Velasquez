@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Desafío - Ricomida</title>
   <link rel="stylesheet" href="./Assets - Ricomida/css/styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
@@ -16,59 +18,72 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 </head>
+
 <body>
 
   <header class="container-fluid bg-dark text-white py-3">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <!-- Enlace a la izquierda -->
-            <a class="navbar-brand" href="#">Ricomida</a>
+      <div class="container">
+        <!-- Enlace a la izquierda -->
+        <a class="navbar-brand" href="#">Ricomida</a>
 
-            <!-- Botón de navegación y lista a la derecha -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto"> <!-- Utilizamos 'ms-auto' para alinear a la derecha en dispositivos grandes -->
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Recetas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+        <!-- Botón de navegación y lista a la derecha -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- Utilizamos 'ms-auto' para alinear a la derecha en dispositivos grandes -->
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-</header>
+  </header>
 
 
-<main class="container">
-  <div class="separator"></div>
-  <section class="mt-5 mb-5 px-4 py-4"> <!-- Agrega más margen superior y inferior aquí -->
-    <div class="row">
+  <main class="container">
+    <div class="separator"></div>
+    <section class="mt-5 mb-5 px-4 py-4"> <!-- Agrega más margen superior y inferior aquí -->
+      <div class="row">
         <div class="col-md-6">
-            <img src="./Assets - Ricomida/img/principal.jpg" class="img-fluid" alt="Pizza al estilo Chicago">
+          <img src="./Assets - Ricomida/img/principal.jpg" class="img-fluid" alt="Pizza al estilo Chicago">
         </div>
         <div class="col-md-6">
-            <h1 class="text-left mb-4"><strong>Pizza al estilo Chicago con espinacas y champiñones</strong></h1>
-            <div class="separator"></div>
-            <h5 class="text-left mb-4"><strong>110 MIN / 6 A 8 PORCIONES</strong></h5>
-            <div class="text-center mt-3 mb-4 py-5"> <!-- Aumenta el margen inferior -->
-              <button type="button" id="enviarCorreo" class="btn btn-primary d-inline-block px-4 mx-3 mt-3 mb-3 pt-2 pb-2 pl-3 pr-3" data-toggle="popover" data-placement="top" title="Presiona para enviar a tu correo">Enviar por correo</button>
-              <button type="button" id="favorito" class="btn btn-primary d-inline-block px-4 mx-3 mt-3 mb-3 pt-2 pb-2 pl-3 pr-3" data-toggle="popover" data-placement="top" title="Agrega esta receta a tus favoritos">Añadir a favoritos</button>
+          <h1 class="text-left mb-4"><strong>Pizza al estilo Chicago con espinacas y champiñones</strong></h1>
+          <div class="separator"></div>
+          <h5 class="text-left mb-4"><strong>110 MIN / 6 A 8 PORCIONES</strong></h5>
+          <div class="text-center mt-3 mb-4 py-5">
 
-            </div>
+
+            <button type="button" id="enviarCorreo"
+              class="btn btn-primary d-inline-block px-4 mx-3 mt-3 mb-3 pt-2 pb-2 pl-3 pr-3" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Enviar por correo">Enviar por correo</button>
+            <!-- Aumenta el margen inferior -->
+
+
+
+
+            <button type="button" id="favorito"
+              class="btn btn-primary d-inline-block px-4 mx-3 mt-3 mb-3 pt-2 pb-2 pl-3 pr-3" data-toggle="popover"
+              data-placement="top" title="Agrega esta receta a tus favoritos">Añadir a favoritos</button>
+
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
 
 
@@ -78,7 +93,6 @@
 
 
 
-  <div class="separator"></div>
 
 
 
@@ -88,165 +102,174 @@
 
 
 
-  <div class="mt-5 py-4">
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="mt-5 py-4">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <ol class="carousel-indicators d-flex justify-content-center mt-5">
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" style="width: 10px; height: 10px; border-radius: 50%; background-color: red;"></li>
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" style="width: 10px; height: 10px; border-radius: 50%; background-color: red;"></li>
-        </ol>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              style="width: 10px; height: 10px; border-radius: 50%; background-color: red;"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              style="width: 10px; height: 10px; border-radius: 50%; background-color: red;"></li>
+          </ol>
 
-            <div class="carousel-item active">
+          <div class="carousel-item active">
 
-                <div class="row justify-content-center"> <!-- Centra las imágenes en dispositivos de pantalla grande -->
-                    <div class="col-lg-3 col-md-6 mb-4"> <!-- En dispositivos grandes, cada columna ocupa un cuarto del ancho, y en dispositivos medianos, cada columna ocupa la mitad del ancho -->
-                        <img src="./Assets - Ricomida/img/slider-1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <img src="./Assets - Ricomida/img/slider-2.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <img src="./Assets - Ricomida/img/slider-3.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <img src="./Assets - Ricomida/img/slider-4.png" class="d-block w-100" alt="...">
-                    </div>
-                </div>
+            <div class="row justify-content-center"> <!-- Centra las imágenes en dispositivos de pantalla grande -->
+              <div class="col-lg-3 col-md-6 mb-4">
+                <!-- En dispositivos grandes, cada columna ocupa un cuarto del ancho, y en dispositivos medianos, cada columna ocupa la mitad del ancho -->
+                <img src="./Assets - Ricomida/img/slider-1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <img src="./Assets - Ricomida/img/slider-2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <img src="./Assets - Ricomida/img/slider-3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <img src="./Assets - Ricomida/img/slider-4.png" class="d-block w-100" alt="...">
+              </div>
             </div>
+          </div>
 
-            <div class="carousel-item">
+          <div class="carousel-item">
 
-                <div class="row justify-content-center">
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <img src="./Assets - Ricomida/img/slider-5.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <img src="./Assets - Ricomida/img/slider-6.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <img src="./Assets - Ricomida/img/slider-7.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <img src="./Assets - Ricomida/img/slider-8.png" class="d-block w-100" alt="...">
-                    </div>
-                </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-3 col-md-6 mb-4">
+                <img src="./Assets - Ricomida/img/slider-5.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <img src="./Assets - Ricomida/img/slider-6.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <img src="./Assets - Ricomida/img/slider-7.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <img src="./Assets - Ricomida/img/slider-8.png" class="d-block w-100" alt="...">
+              </div>
             </div>
+          </div>
 
         </div>
 
 
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-  <div class="separator"></div>
-
-
-
-
-
-
-
-  <div class="row">
-    <div class="col-md-6">
-      <h3 class="mt-5 text-left">Preparación</h3>
-      <ol>
-        <li>En un tazón grande, mezclar la harina, la sal y la levadura.</li>
-        <li>Agregar el aceite de oliva y el agua tibia y mezclar hasta obtener una masa suave.</li>
-        <li>Amasar la masa durante 5 minutos hasta que esté lisa y elástica.</li>
-        <li>Colocar la masa en un tazón engrasado, cubrirla con un paño húmedo y dejarla reposar en un lugar cálido
-          durante 1 hora.</li>
-        <li>Precalentar el horno a 200 °C.</li>
-        <li>Estirar la masa en forma de círculo sobre una superficie enharinada.</li>
-        <li>Colocar la masa en una bandeja para hornear engrasada.</li>
-        <li>Extender la salsa de tomate sobre la masa, dejando un borde de 1 cm.</li>
-        <li>Espolvorear la mozzarella rallada sobre la salsa de tomate.</li>
-        <li>Distribuir las espinacas y los champiñones picados sobre la pizza.</li>
-        <li>Hornear la pizza durante 20-25 minutos, hasta que la masa esté dorada y el queso derretido.</li>
-        <li>Dejar reposar la pizza durante 5 minutos antes de servir.</li>
-      </ol>
-    </div>
-    <div class="col-md-6">
-      <h3 class="mt-5 text-right">Ingredientes</h3>
-      <ul class="list-unstyled text-right">
-        <li>1 taza de harina</li>
-        <li>1/2 cucharadita de sal</li>
-        <li>1/4 cucharadita de levadura en polvo</li>
-        <li>1/4 taza de aceite de oliva</li>
-        <li>1/2 taza de agua tibia</li>
-        <li>1 taza de salsa de tomate</li>
-        <li>1 taza de mozzarella rallada</li>
-        <li>1/2 taza de espinacas picadas</li>
-        <li>1/2 taza de champiñones picados</li>
-      </ul>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-  <div class="separator"></div>
-
-
-
-
-
-
-
-
-
-
-  <h1 class="mt-1 text-center py-5"><strong>`Recetas relacionadas`</strong></h1>
-
-<div class="row row-cols-1 row-cols-md-3 gy-4 py-5"> <!-- Utilizamos row-cols-* para especificar el número de columnas en diferentes tamaños de pantalla y gy-* para agregar un espacio entre las filas -->
-  <div class="col-md-4">
-    <div class="card h-100 d-flex flex-column mb-4"> <!-- Agregamos la clase h-100 para que todas las tarjetas tengan la misma altura y flex-column para utilizar flexbox -->
-      <img src="./Assets - Ricomida/img/recipe-card-1.png" class="card-img-top" alt="Receta 1" style="object-fit: cover; height: 200px;">
-      <!-- Establecemos un tamaño fijo para la altura de la imagen -->
-      <div class="card-body">
-        <h3 class="mt-1 text-left py-2 font-bold">PANQUEQUE CON MANJAR Y CREMA</h3>
-        <h5 class="card-title">Ensalada de quinoa con verduras asadas</h5>
-        <p class="card-text">Esta ensalada es una opción nutritiva y deliciosa para el almuerzo o la cena.</p>
       </div>
     </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card h-100 d-flex flex-column mb-4">
-      <img src="./Assets - Ricomida/img/recipe-card-2.png" class="card-img-top" alt="Receta 2" style="object-fit: cover; height: 200px;">
-      <div class="card-body">
-        <h3 class="mt-1 text-left py-2 font-bold">TIRAMISU</h3>
-        <h5 class="card-title">Pollo al curry con arroz basmati</h5>
-        <p class="card-text">Un plato con sabores exóticos y fácil de preparar.</p>
+
+
+
+
+
+
+
+
+
+
+    <div class="separator"></div>
+
+
+
+
+
+
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="mt-5 text-left"><strong>`Preparación`</strong></h3>
+        <ol>
+          <li>En un tazón grande, mezclar la harina, la sal y la levadura.</li>
+          <li>Agregar el aceite de oliva y el agua tibia y mezclar hasta obtener una masa suave.</li>
+          <li>Amasar la masa durante 5 minutos hasta que esté lisa y elástica.</li>
+          <li>Colocar la masa en un tazón engrasado, cubrirla con un paño húmedo y dejarla reposar en un lugar cálido
+            durante 1 hora.</li>
+          <li>Precalentar el horno a 200 °C.</li>
+          <li>Estirar la masa en forma de círculo sobre una superficie enharinada.</li>
+          <li>Colocar la masa en una bandeja para hornear engrasada.</li>
+          <li>Extender la salsa de tomate sobre la masa, dejando un borde de 1 cm.</li>
+          <li>Espolvorear la mozzarella rallada sobre la salsa de tomate.</li>
+          <li>Distribuir las espinacas y los champiñones picados sobre la pizza.</li>
+          <li>Hornear la pizza durante 20-25 minutos, hasta que la masa esté dorada y el queso derretido.</li>
+          <li>Dejar reposar la pizza durante 5 minutos antes de servir.</li>
+        </ol>
+      </div>
+      <div class="col-md-6">
+        <h3 class="mt-5 text-right"><strong>`Ingredientes`</strong></h3>
+        <ul class="list-unstyled text-right">
+          <li>1 taza de harina</li>
+          <li>1/2 cucharadita de sal</li>
+          <li>1/4 cucharadita de levadura en polvo</li>
+          <li>1/4 taza de aceite de oliva</li>
+          <li>1/2 taza de agua tibia</li>
+          <li>1 taza de salsa de tomate</li>
+          <li>1 taza de mozzarella rallada</li>
+          <li>1/2 taza de espinacas picadas</li>
+          <li>1/2 taza de champiñones picados</li>
+        </ul>
       </div>
     </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card h-100 d-flex flex-column mb-4">
-      <img src="./Assets - Ricomida/img/recipe-card-3.png" class="card-img-top" alt="Receta 3" style="object-fit: cover; height: 200px;">
-      <div class="card-body">
-        <h3 class="mt-1 text-left py-2 font-bold">PLATEADAS</h3>
-        <h5 class="card-title">Brownie de chocolate con nueces</h5>
-        <p class="card-text">Un postre irresistible para los amantes del chocolate.</p>
+
+
+
+
+
+
+
+
+
+    <div class="separator"></div>
+
+
+
+
+
+
+
+
+
+
+    <h1 class="mt-1 text-center py-5"><strong>`Recetas relacionadas`</strong></h1>
+
+    <div class="row row-cols-1 row-cols-md-3 gy-4 py-5">
+      <!-- Utilizamos row-cols-* para especificar el número de columnas en diferentes tamaños de pantalla y gy-* para agregar un espacio entre las filas -->
+      <div class="col-md-4">
+        <div class="card h-100 d-flex flex-column mb-4">
+          <!-- Agregamos la clase h-100 para que todas las tarjetas tengan la misma altura y flex-column para utilizar flexbox -->
+          <img src="./Assets - Ricomida/img/recipe-card-1.png" class="card-img-top" alt="Receta 1"
+            style="object-fit: cover; height: 200px;">
+          <!-- Establecemos un tamaño fijo para la altura de la imagen -->
+          <div class="card-body">
+            <h3 class="mt-1 text-left py-2 font-bold">PANQUEQUE CON MANJAR Y CREMA</h3>
+            <h5 class="card-title">Ensalada de quinoa con verduras asadas</h5>
+            <p class="card-text">Esta ensalada es una opción nutritiva y deliciosa para el almuerzo o la cena.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 d-flex flex-column mb-4">
+          <img src="./Assets - Ricomida/img/recipe-card-2.png" class="card-img-top" alt="Receta 2"
+            style="object-fit: cover; height: 200px;">
+          <div class="card-body">
+            <h3 class="mt-1 text-left py-2 font-bold">TIRAMISU</h3>
+            <h5 class="card-title">Pollo al curry con arroz basmati</h5>
+            <p class="card-text">Un plato con sabores exóticos y fácil de preparar.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 d-flex flex-column mb-4">
+          <img src="./Assets - Ricomida/img/recipe-card-3.png" class="card-img-top" alt="Receta 3"
+            style="object-fit: cover; height: 200px;">
+          <div class="card-body">
+            <h3 class="mt-1 text-left py-2 font-bold">PLATEADAS</h3>
+            <h5 class="card-title">Brownie de chocolate con nueces</h5>
+            <p class="card-text">Un postre irresistible para los amantes del chocolate.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
-</main>
+  </main>
 
 
 
@@ -258,32 +281,25 @@
 
 
 
-<section class="red-section bg-danger text-white mt-6 py-7"> <!-- Aumentamos el valor de py-7 -->
-  <div class="container text-center">
+  <section class="red-section bg-danger text-white mt-6 py-7"> <!-- Aumentamos el valor de py-7 -->
+    <div class="container text-center">
       <h1>SUSCRIBETE EN NUESTRO NEWSLETTER</h1>
       <h3>y obtén las mejores recetas que tenemos en Ricomida</h3>
-      <a href="#" class="btn btn-danger mt-3 py-2" style="border-color: white; padding: 20px 80px;">Empezar</a> <!-- Aplicamos el estilo directamente -->
-  </div>
-</section>
+      <a href="#" class="btn btn-danger mt-3 py-2" style="border-color: white; padding: 20px 80px;">Empezar</a>
+      <!-- Aplicamos el estilo directamente -->
+    </div>
+  </section>
 
 
 
 
 
 
-<footer class="container-fluid bg-dark text-white py-5">
-  <div class="text-center">
-    <h3>Ricomida</h3>
-  </div>
-</footer>
-
-
-
-
-
-
-
-
+  <footer class="container-fluid bg-dark text-white py-5">
+    <div class="text-center">
+      <h3>Ricomida</h3>
+    </div>
+  </footer>
 
 
 
@@ -294,89 +310,165 @@
 
 
 
-<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-<script>
 
-$(document).ready(function() {
-    // Evento click
-    $('#enviarCorreo').click(function() {
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <script>
+
+    $(document).ready(function () {
+      // Evento click
+      $('#enviarCorreo').click(function () {
         alert('El correo fue enviado correctamente...');
+      });
+
+
+      $('#favorito').click(function () {
+        alert('Receta añadida a favoritos...');
+      });
+
     });
 
-
-    $('#favorito').click(function() {
-        alert('Receta añadida a favoritos');
-    });
-
-
-
-});
-
-$(document).ready(function(){
+    $(document).ready(function () {
       // Inicializar popovers
       $('[data-toggle="popover"]').popover();
 
 
       // Mostrar popover al pasar el mouse
-      $('#enviarCorreo').mouseenter(function(){
-        $(this).popover('show');
-      });
 
-      $('#favorito').mouseenter(function(){
+
+      $('#favorito').mouseenter(function () {
         $(this).popover('show');
       });
 
       // Ocultar popover al retirar el mouse
-      $('#enviarCorreo').mouseleave(function(){
-        $(this).popover('hide');
-      });
 
-      $('#favorito').mouseleave(function(){
+
+      $('#favorito').mouseleave(function () {
         $(this).popover('hide');
       });
     });
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
       // Evento click para toggle el contenido de las tarjetas "card"
-    document.querySelectorAll('.card').forEach(function(card) {
-      card.addEventListener('click', function() {
+      document.querySelectorAll('.card').forEach(function (card) {
+        card.addEventListener('click', function () {
           let cardBody = this.querySelector('.card-body');
           cardBody.style.display = (cardBody.style.display === 'none') ? 'block' : 'none';
+        });
+      });
+
+      $(document).ready(function () {
+        $('.card').click(function () {
+          var cardBody = $(this).find('.card-body');
+          cardBody.toggle(); // Alternar la visibilidad del contenido de la tarjeta
+        });
+      });
+
+
+
+
+
+
+      // Inicialización del carousel de Bootstrap
+      var carousels = document.querySelectorAll('.carousel');
+      carousels.forEach(function (carousel) {
+        new bootstrap.Carousel(carousel);
       });
     });
 
 
-    // Inicialización del carousel de Bootstrap
-    var carousels = document.querySelectorAll('.carousel');
-    carousels.forEach(function(carousel) {
-      new bootstrap.Carousel(carousel);
+    $(document).ready(function () {
+      var colorOriginal = true;
+
+
+      $('h3').dblclick(function () {
+        if (colorOriginal) {
+          $(this).css('color', 'red');
+        } else {
+          $(this).css('color', ''); // Restaura el color original
+        }
+        colorOriginal = !colorOriginal; // Invierte el estado del color
+      });
+
+
+      // Evento dblclick para cambiar el color del texto de las listas ordenadas
+      $('ol').dblclick(function () {
+        if (colorOriginal) {
+          $(this).css('color', 'red');
+        } else {
+          $(this).css('color', ''); // Restaura el color original
+        }
+        colorOriginal = !colorOriginal; // Invierte el estado del color
+      });
+
+      // Evento dblclick para cambiar el color del texto de las listas desordenadas
+      $('ul').dblclick(function () {
+        if (colorOriginal) {
+          $(this).css('color', 'red');
+        } else {
+          $(this).css('color', ''); // Restaura el color original
+        }
+        colorOriginal = !colorOriginal; // Invierte el estado del color
+      });
     });
-  });
-
-  $(document).ready(function() {
-    var colorOriginal = true;
-
-// Evento dblclick para cambiar el color del h1
-$('h1').dblclick(function() {
-  if (colorOriginal) {
-    $(this).css('color', 'red');
-  } else {
-    $(this).css('color', ''); // Restaura el color original
-  }
-  colorOriginal = !colorOriginal; // Invierte el estado del color
-});
-  });
-</script>
 
 
 
 
+    $(document).ready(function () {
+      var colorOriginal = true;
 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
+      // Evento dblclick para cambiar el color del h1
+      $('h1').dblclick(function () {
+        if (colorOriginal) {
+          $(this).css('color', 'red');
+        } else {
+          $(this).css('color', ''); // Restaura el color original
+        }
+        colorOriginal = !colorOriginal; // Invierte el estado del color
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      // Ocultar el carousel en tamaños sm y xs
+      if ($(window).width() < 576) { // Para tamaños xs (extra pequeños)
+        $('#carouselExampleIndicators').hide();
+      }
+
+      $(window).resize(function () { // Para controlar cambios en el tamaño de la ventana
+        if ($(window).width() < 576) { // Ocultar en tamaños xs (extra pequeños)
+          $('#carouselExampleIndicators').hide();
+        } else {
+          $('#carouselExampleIndicators').show(); // Mostrar en otros tamaños
+        }
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      // Inicializar tooltips
+      $('[data-bs-toggle="tooltip"]').tooltip();
+    });
+  </script>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 
 
 </body>
+
 </html>
