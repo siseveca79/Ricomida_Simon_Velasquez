@@ -61,8 +61,9 @@
             <div class="separator"></div>
             <h5 class="text-left mb-4"><strong>110 MIN / 6 A 8 PORCIONES</strong></h5>
             <div class="text-center mt-3 mb-4 py-5"> <!-- Aumenta el margen inferior -->
-              <button type="button" id="enviarCorreo" class="btn btn-primary d-inline-block px-4 mx-3" data-toggle="popover" data-placement="top" title="Presiona para enviar a tu correo">Enviar por correo</button>
-              <button type="button" id="favorito" class="btn btn-primary d-inline-block px-4 mx-3" data-toggle="popover" data-placement="top" title="Agrega esta receta a tus favoritos">Añadir a favoritos</button>
+              <button type="button" id="enviarCorreo" class="btn btn-primary d-inline-block px-4 mx-3 mt-3 mb-3 pt-2 pb-2 pl-3 pr-3" data-toggle="popover" data-placement="top" title="Presiona para enviar a tu correo">Enviar por correo</button>
+              <button type="button" id="favorito" class="btn btn-primary d-inline-block px-4 mx-3 mt-3 mb-3 pt-2 pb-2 pl-3 pr-3" data-toggle="popover" data-placement="top" title="Agrega esta receta a tus favoritos">Añadir a favoritos</button>
+
             </div>
         </div>
     </div>
@@ -72,11 +73,12 @@
 
   <div class="mt-5 py-4">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators d-flex justify-content-center mt-3">
+      <ol class="carousel-indicators d-flex justify-content-center mt-5"> <!-- Aumenta el margen superior -->
         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active" style="width: 10px; height: 10px; border-radius: 50%; background-color: red;"></li>
         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" style="width: 10px; height: 10px; border-radius: 50%; background-color: red;"></li>
         <!-- Agregar más indicadores según el número de imágenes -->
-      </ol>
+    </ol>
+
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="row">
@@ -230,9 +232,6 @@ $(document).ready(function(){
       // Inicializar popovers
       $('[data-toggle="popover"]').popover();
 
-      // Cambiar contenido de los popovers
-      $('#enviarCorreo').attr('data-content', 'Presiona para enviar este contenido por correo');
-      $('#favorito').attr('data-content', 'Haz clic para agregar esta receta a tus favoritos');
 
       // Mostrar popover al pasar el mouse
       $('#enviarCorreo').mouseenter(function(){
@@ -252,6 +251,21 @@ $(document).ready(function(){
         $(this).popover('hide');
       });
     });
+    document.addEventListener("DOMContentLoaded", function() {
+      // Evento click para toggle el contenido de las tarjetas "card"
+    document.querySelectorAll('.card').forEach(function(card) {
+      card.addEventListener('click', function() {
+          let cardBody = this.querySelector('.card-body');
+          cardBody.style.display = (cardBody.style.display === 'none') ? 'block' : 'none';
+      });
+    });
+
+    // Inicialización del carousel de Bootstrap
+    var carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(function(carousel) {
+      new bootstrap.Carousel(carousel);
+    });
+  });
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
